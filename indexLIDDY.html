@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR model</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 'AmericanTypewriter';
+        src: url('AmericanTypewriter.ttc') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'AlteDIN1451';
+        src: url('alte-din-1451-mittelschrift.regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+        
+      body {
+        background-color:white;
+        color: black;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+        height: 100vh;
+        margin: 0;
+      }
+
+      model-viewer {
+  width: 88%;
+  height: 55%; /* Increased by 10% for bigger model */
+  min-height: 330px; /* Increased by 10% */
+  max-width: 880px; /* Increased by 10% */
+  margin: 22px auto;
+  background-color: white;
+  flex-shrink: 0; /* Prevents shrinking of the model-viewer */
+      }
+
+      .text-box {
+  width: 88%; /* Same width as model-viewer */
+  padding: 22px;
+  margin: 22px 0;
+  font-family: 'AlteDIN1451';
+  font-size: 2em;
+  background-color: white;
+  max-width: 880px; /* Sets a maximum width of model-viewer */
+  color: black;
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-bottom: 22px;
+      }
+
+      h2 {
+        font-family: 'AlteDIN1451';
+        margin: 10;
+        padding: 10px;
+        color: black;
+        text-align: center;
+        word-spacing: 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+<H2>Du bist über <span style="font-family: 'AmericanTypewriter', 'AlteDIN1451'; margin: 0 1.5em; display: inline-block; font-size: 110%;">LIDDY BACROFF</span> gestolpert</H2>
+  <model-viewer src="Stolperstein11.glb"
+                ios-src="Stolperstein11.usdz"
+                alt="bitte setzen"
+                ar
+                auto-rotate
+                camera-controls
+                autoplay
+                animation-loop
+                animation-name="CubeAction"
+                ar-modes="webxr scene-viewer quick-look" 
+                environment-image="neutral"
+                scale="1.1 1.1 1.1">   
+  </model-viewer>
+  <div class="text-box">
+  <span style="font-size:0.7em;">Erfahre auf dem Stolperstein oder die Audio</span>
+</div>
+   
+</body>
+</html>
