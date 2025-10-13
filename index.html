@@ -20,7 +20,8 @@
       }
         
       body {
-  background: url('BACROFF_St_Pauli.jpeg') no-repeat center center fixed;
+  min-height: 180vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, white 100%), url('BACROFF_St_Pauli.jpeg') no-repeat center center fixed;
   background-size: cover;
         color: black;
   /* display: flex; */
@@ -66,12 +67,8 @@
   </head>
   <body>
 <H2><span style="font-size:100%;">Du bist über</span> <span style="font-family: 'AlteDIN1451', 'AmericanTypewriter'; margin: 0 1.5em; display: inline-block; font-size: 150%;">LIDDY BACROFF</span> <span style="font-size:100%;">gestolpert.</span></H2>
-<div class="text-box">
-  <span style="font-size:0.5em;">Doch beim Stolpern ist noch nicht Schluss. 
-    Auf diesem Stolperstein kannst du über ihr Leben erfahren. </span>
-</div>
-<model-viewer src="StolpersteinCON.glb"
-                ios-src="StolpersteinCON.usdz"
+<model-viewer src="StolpersteinLast.glb"
+                ios-src="StolpersteinLast.usdz"
                 alt="Stolperstein"
                 ar
                 auto-rotate
@@ -83,6 +80,10 @@
                 environment-image="neutral"
                 scale="1.1 1.1 1.1">   
   </model-viewer>
+<div class="text-box">
+  <span style="font-size:0.5em;">Doch beim Stolpern ist noch nicht Schluss. 
+    Auf diesem Stolperstein kannst du über ihr Leben erfahren. </span>
+</div>
    
 </body>
 </html>
